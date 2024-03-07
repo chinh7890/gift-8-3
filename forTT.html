@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <title>Anh có điều muốn nói....</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <meta charset="utf-8">
+    <meta name="description" content="Cậu ơi ! Tớ muốn nói với cậu điều này...." />
+
+    <link rel="apple-touch-icon" sizes="57x57" href="image/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="image/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="image/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="image/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="image/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="image/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="image/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="image/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="image/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="image/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="image/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="image/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="image/favicon-16x16.png">
+    <link rel="manifest" crossorigin="use-credentials" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="image/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+</head>
+<style>
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    .music {
+        width: 300px;
+        height: 200px;
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .music .bar {
+        width: 12px;
+        border-radius: 10px;
+        background: white;
+        animation: movement 1.5s ease-in-out infinite;
+    }
+
+    @keyframes movement {
+
+        0%,
+        100% {
+            height: 2px;
+        }
+
+        50% {
+            height: 80px;
+        }
+    }
+
+    .music .bar:nth-child(1) {
+        background: #b65252;
+        animation-delay: 1s;
+    }
+
+    .music .bar:nth-child(2) {
+        background: pink;
+        animation-delay: 0.8s;
+    }
+
+    .music .bar:nth-child(3) {
+        background: #b65252;
+        animation-delay: 0.6s;
+    }
+
+    .music .bar:nth-child(4) {
+        background: pink;
+        animation-delay: 0.4s;
+    }
+
+    .music .bar:nth-child(5) {
+        background: #b65252;
+        animation-delay: 0.2s;
+    }
+
+    .music .bar:nth-child(6) {
+        background: pink;
+        animation-delay: 0.2s;
+    }
+
+    .music .bar:nth-child(7) {
+        background: #b65252;
+        animation-delay: 0.4s;
+    }
+
+    .music .bar:nth-child(8) {
+        background: pink;
+        animation-delay: 0.6s;
+    }
+
+    .music .bar:nth-child(9) {
+        background: #b65252;
+        animation-delay: 0.8s;
+    }
+
+    .music .bar:nth-child(10) {
+        background: pink;
+        animation-delay: 1s;
+    }
+</style>
+
+<body>
+    <div id="click">
+        <button id="but4" class="btn2" onclick="return hide3();" style="height: 4rem; font-size: 20px;">Là cute
+            đó😐</button>
+        <div class="container">
+            <h1 class="hello">hello Thanh Trúc !!!</h1>
+            <h2 class="hello">aka</h2>
+            <h1 class="hello">Erina&Sota</h1>
+            <h2 id="h22">Nghe nói...</h2>
+            <h2 id="h2h2">Em... <br>ấy ấy lắm đúng hong</h2>
+            <div class="button">
+                <button id="but1" class="but1" onclick="return show();" style="height: 4rem; font-size: 21px;">Dạ đúng
+                    ròi 😳</button>
+                <br><br>
+                <button id="but2" class="but1" onclick="return hide();" style="height: 4rem; font-size: 20px;">ấy là
+                    sao?
+                    😐</button>
+            </div>
+
+        </div>
+        <br><br><br>
+        <button id="but3" class="btn" onclick="return hide2();" style="height: 4rem; font-size: 20px;">ấy là ấy
+            đó😐</button>
+        <audio id="audio2">
+            <source src="audio\Nhạc meme lãng mạn ngọt ngào chill chill - romantic sound edit.mp3">
+        </audio>
+
+    </div>
+    <form id="form1" class="formcss" onsubmit="return valid();">
+        <h1 id="challen">Thật ra là ...</h1>
+        <p id="des" style="color: white; font-size: 25px;">Không có gì ở đây cả... mà chỉ có ....</p>
+        <button id="fbut1" class="fbtn" onclick="return inrel();" style="height: 4rem; font-size: 21px;">nltc là thiên
+            tài depzai pro</button>
+        <button id="fbut1alt" class="fbtn" onclick="return inrel2();"
+            style="display: none; height: 4rem;  font-size: 21px;">Oke, tất nhiên rồi!! </button>
+        <br><br>
+        <button id="fbut2alt" class="fbtn" onclick="return trollalt();" style="height: 4rem; font-size: 21px;">nltc là
+            cc</button>
+        <button id="fbut2" class="fbtn" onclick="return troll();"
+            style="display: none; height: 4rem; font-size: 21px;">bấm cho zui</button>
+        <p id="alert2" style="color:seashell; font-size: 25px;"></p>
+        <p id="alert" style="color:seashell; font-size: 25px;"></p>
+        <button id="fbut3" class="fbtnh1" onclick="return troll1();"
+            style="display: none; height: 4rem; font-size: 21px;">bấm cho zui</button>
+        <button id="fbut4" class="fbtnh2" onclick="return troll2();"
+            style="display: none; height: 4rem; font-size: 21px;">bấm cho zui</button>
+        <audio id="audio">
+            <source src="audio/Vietsub - At My Worst - Pink Sweat$ - Lyrics Video.mp3">
+        </audio>
+        <audio id="audio3">
+            <source src="audio/Nơi này có anh - Sơn Tùng M-tp.mp3">
+        </audio>
+    </form>
+    <div id="yess" class="final">
+        <h1>8 tháng 3 chúc em <br>luôn vui vẻ và trẻ trung xinh đẹp nhaaaa 🥰</h1>
+        <h2>Thanh Trúc</h2>
+        <h1 id="heart">❤️</h1>
+    </div>
+    <div id="wave" class="music">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+    <button id="fbut5alt" class="fbtn" onclick="return inrel3();" style=" position: absolute;
+        bottom: 0px; right: 0px; display: none; height: 4rem; font-size: 10px;">Có duyên mới thấy❤️</button>
+    <button id="fbut6alt" class="fbtn" onclick="return inrel4();" style=" position: absolute;
+            bottom: 0px; right: 0px; display: none; height: 4rem; font-size: 21px;">Gift❤️</button>
+    <div id="video" style="margin-top: 50px;">
+        <h3>hihii</h3>
+        <div class="video-container">
+            <video width="300" height="360" id="video1" class="video" controls>
+                <source src="audio/received_1450955099168517.mp4" type="video/mp4">
+            </video>
+            <video width="400" height="360" id="video2" class="video" controls>
+                <source src="audio/vdll2.mp4" type="video/mp4">
+            </video>
+            <iframe id="loveyourseft" class="video"
+                src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fweb.facebook.com%2Ft.t.truc.121%2Fposts%2Fpfbid02coHvyL8zqQhVGbPLJq8AhVHMG6YZDuSGfsWGfaxHff2b4jiLa6hGBpdLoFb2HUbxl&show_text=true&width=500"
+                width="400" height="360" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                allowfullscreen="true"
+                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </div>
+
+    </div>
+
+</body>
+<script src="js/script.js"></script>
+
+</html>
